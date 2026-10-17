@@ -554,8 +554,8 @@ setTimeout(done,8000)})();
                 <tr>
                     <td><code>tile_rects</code></td>
                     <td>array</td>
-                    <td><span class="req">Yes</span></td>
-                    <td>Array of <code>[idx, x, y, w, h]</code> DOM rects for each grid tile. Used locally to map tile indices to exact pixel centres. Without it, the solver falls back to guessing a uniform grid from <code>total</code>.</td>
+                    <td><span class="req">No</span></td>
+                    <td>Array of <code>[idx, x, y, w, h]</code> DOM rects for each grid tile. Required only for grid-style challenges with tiles; used locally to map tile indices to exact pixel centres. Without it, the solver falls back to guessing a uniform grid from <code>total</code>. Omit for non-tile challenges (drag, area, etc.).</td>
                 </tr>
             </tbody>
         </table>
